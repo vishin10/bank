@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            overflow-y: auto;
+            background-color: #f8f9fa;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .nav-link:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-xl-3 bg-light sidebar">
+                <div class="py-4">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Item 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Item 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Item 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Item 4</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 content">
+                <div class="container-fluid">
+                    <div class="row custombg pad">
+                        <div class="col-md-10">
+                            Search..
+                        </div>
+                        <div class="col-md-2">
+                            More
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid bg-secondary">
+                    <!-- Header -->
+                    <div class="row m-3">
+                        <div class="p-5 text-left bg-success text-white col-md-6">hello user</div>
+                        <div class="p-5 text-right bg-success text-white col-md-6">recent items</div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="container-fluid container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4 bg">card 1</div>
+                            <div class="col-md-6 col-sm-4 custombg">card 2</div>
+                            <div class="col-md-6 col-sm-4 custombg">card 3</div>
+                            <div class="col-md-6 col-sm-4 bg">card 4</div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="row m-3">
+                        <div class="col p-5 bg-dark text-center text-white">Footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
